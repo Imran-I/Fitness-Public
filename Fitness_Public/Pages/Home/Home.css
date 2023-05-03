@@ -1,0 +1,891 @@
+﻿body {
+    background: linear-gradient(90deg, rgb(236 226 224) 0%, rgb(243 242 240) 50%, rgb(241 237 236) 100%);
+}
+
+.containerBg {
+    background-color: white;
+}
+
+.DivHome1st {
+}
+
+.Home1stContainer {
+    position: relative;
+}
+
+.HomeImg {
+    width: 100%;
+    height: 58rem;
+}
+
+.lblHomed1 {
+    text-transform: uppercase;
+    background-image: linear-gradient( -225deg, #0293ed 0%, #44107a 29%, #ff1361 67%, #fff800 100% );
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 50rem;
+    font-size: 5rem;
+    font-family: 'capture_it';
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+.lblHomed2 {
+    position: absolute;
+    left: 14%;
+    top: 65%;
+    width: 50rem;
+    font-size: 2rem;
+    font-family: 'Manrope';
+    color: #000000;
+    background: linear-gradient(91.64deg,#24529c 6.61%,#0273cc 96.58%);
+    -webkit-background-clip: text;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+.btnTryNow {
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    line-height: 1em;
+    padding: 10px 15px;
+    position: absolute;
+    left: 20%;
+    top: 72%;
+    border: 1px solid;
+}
+
+    .btnTryNow:hover {
+        padding: 16px;
+    }
+
+
+.divClasses {
+    margin: 6rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.lblClassesHead {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Manrope';
+    margin-bottom: 2rem;
+    color: #cdcdcd;
+}
+
+.divClassList {
+    position: relative;
+}
+
+.lblClassHead {
+    position: absolute !important;
+    left: 50%;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Manrope';
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #0020ff;
+    background: linear-gradient(91.64deg,#2700c3 6.61%,#8c00ff 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px #000000ba;
+}
+
+.imgClass {
+    width: 40rem;
+    border-radius: 1rem;
+    z-index: 2;
+}
+/*Scroll effect*/
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+    .reveal.active {
+        opacity: 1;
+    }
+
+
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.divSubscription {
+    text-align: center;
+    margin: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 12rem;
+}
+
+.btnSubsFree {
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    line-height: 1em;
+    padding: 10px 15px;
+}
+
+.divSubscriptionList {
+    box-shadow: rgb(0 0 0) 0px 2px 8px;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    height: 21rem;
+    background: linear-gradient(90deg, rgba(33,37,41,1) 0%, rgba(73,80,87,1) 50%, rgba(33,37,41,1) 100%);
+    margin-left: 1rem;
+}
+
+    .divSubscriptionList:hover {
+        background: linear-gradient(90deg, rgb(76 74 74) 0%, rgb(0 0 0) 50%, rgb(82 81 81) 100%);
+    }
+
+.lblSubsSubHead {
+    background: linear-gradient(91.64deg,#383838 6.61%,#000000 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+}
+
+.lblSubsHead {
+    background: linear-gradient(91.64deg,#fdfdfd 6.61%,#c5c5c5 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+}
+
+.lblSubsHeadPro {
+    background: linear-gradient(91.64deg,#ffc61d 6.61%,#c18f00 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+}
+
+.lblSubsHeadUlt {
+    background: linear-gradient(91.64deg,#d800ff 6.61%,#00c1bd 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+}
+
+.divSubsBenifits {
+    display: grid;
+}
+
+.lblSubsDtl {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Manrope';
+    color: #adadad;
+}
+
+.divTrainer {
+    margin: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.imgTrainer {
+    width: 28rem;
+    border-radius: 1rem;
+}
+
+.lblTrainerHead {
+    background: linear-gradient(91.64deg,#ffffff 6.61%,#959595 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+    border-radius: 1rem;
+}
+
+.owl-prev span, .owl-next span {
+    color: #FFF;
+    font-size: 5rem;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.owl-prev {
+    left: 10px;
+}
+
+.owl-next {
+    right: 10px;
+}
+
+
+.divMeal {
+    text-align:center;
+}
+.lblMealHead {
+    background: linear-gradient(91.64deg,#383838 6.61%,#000000 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+}
+.divMealImg {
+    position: sticky;
+    top: 6rem;
+}
+.imgFood {
+    width: 100%;
+    border-radius: 1rem;
+
+}
+.divMealDtls {
+    margin: 10rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+.lblMealPlanHead {
+    background: linear-gradient(91.64deg,#383838 6.61%,#000000 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+}
+
+.divTrainers {
+    text-align:center;
+}
+
+.lbltrainerHead {
+    background: linear-gradient(91.64deg,#383838 6.61%,#000000 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+}
+.divTrainerImg {
+    position: sticky;
+    top: 6rem;
+}
+.imgTrainers {
+    width: 100%;
+    border-radius: 1rem;
+}
+.divTrainerDtls {
+    margin: 10rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+.lblTrainerDec {
+    background: linear-gradient(91.64deg,#383838 6.61%,#000000 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+}
+
+.divReview {
+    text-align:center;
+}
+
+.divReviewImg {
+    position: sticky;
+    top: 6rem;
+    margin: 5rem;
+}
+
+.imgReview {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.lblReviewHead {
+    background: linear-gradient(91.64deg,#383838 6.61%,#000000 96.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Manrope';
+}
+.divReviewList {
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    margin: 5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    position:relative;
+}
+.divReviewProfile {
+    padding: 1rem;
+}
+.imgReviewProfile {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 10rem;
+}
+.divReviewDtls {
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-family: 'Manrope';
+    font-weight: 600;
+}
+.lblReviewerName {
+    font-size: 1.4rem;
+    font-family: 'Manrope';
+    font-weight: 600;
+}
+
+.ImgStar {
+    width:2rem;
+}
+
+
+
+/*Footer*/
+
+:root {
+    --FooterBg: #ECECEC;
+    --AboutClr: #000000;
+    --PrivacyBg: #fff;
+    --AddressClr: #3C3C3C;
+    --NewsClr: #3C3C3C;
+}
+
+.Footer {
+    min-height: auto;
+    width: auto;
+    /*position: relative;*/
+}
+
+.FooterBg {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    padding: 0;
+    background: linear-gradient(90deg, rgb(255 255 255) 0%, rgb(229 229 229) 50%, rgb(255 255 255) 100%);
+}
+
+.FooterSpacing {
+    margin: 2.4rem 6.4rem 0 6.4rem;
+}
+
+.About-Container {
+    font-family: 'Manrope', sans-serif;
+    color: #000000;
+}
+
+.ImgIconCommon {
+    width: auto;
+}
+
+
+.About-Container
+.Main-Heading
+.Desc_1,
+.LatestNews-Container
+.Main-Heading
+.Desc_1,
+.Instagram-Container
+.Main-Heading
+.Desc_1 {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 0.6rem;
+    color: var(--AboutClr);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.Address
+.Desc_1,
+.Address
+.Desc_2 {
+    display: flex;
+    text-transform: capitalize;
+    gap: 1rem;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+.MobileNo {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+
+.EmailAddress {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.4rem;
+}
+
+.ImgEmail {
+    width: auto;
+}
+
+.SocialMedia-Icon {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    padding-left: 1.4rem;
+}
+
+.ImgSocialIconCommon {
+    width: auto;
+}
+
+
+.LatestNews-Container {
+    font-family: 'Manrope', sans-serif;
+}
+
+.LatestNews {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+
+    .LatestNews
+    .Desc_1 {
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 2rem;
+    }
+
+.ImgCommonNews {
+    height: 6rem;
+    width: 7rem;
+    border-radius: 1rem;
+}
+
+.Insta-Stories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ImgCmnInstStory {
+    width: auto;
+    height: 10rem;
+    width: 10rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.PrivacyPolicy-Container {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--PrivacyBg);
+    margin-top: 2rem;
+    padding: 3.2rem 1rem;
+}
+
+.PrivacyPolicies {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.CopyRight {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4rem;
+}
+
+.DesignedBy {
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+}
+
+.ImgDesignedBy {
+    width: auto;
+}
+
+.CommonLinkPrivacy:link,
+.CommonLinkPrivacy:active,
+.CommonLinkPrivacy:visited,
+.CommonLinkPrivacy:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+.PrematixLink:link,
+.PrematixLink:active,
+.PrematixLink:visited,
+.PrematixLink:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+    .FooterBg {
+        /*transform: translate(-50%,30%);*/
+    }
+}
+
+@media (max-width: 425px) {
+    .FooterBg {
+        /*transform: translate(-50%,30%);*/
+    }
+}
+
+@media (max-width: 375px) {
+    .FooterBg {
+        /*transform: translate(-50%,30%);*/
+    }
+}
+
+@media (max-width: 320px) {
+    .FooterBg {
+        /*transform: translate(-50%,40%);*/
+    }
+}
+
+@media (max-width: 320px), (max-width:375px), (max-width:425px), (max-width:576px) {
+
+    .ImgIconCommon {
+        height: 1.6rem;
+    }
+
+    .About-Container
+    .Main-Heading
+    .Desc_1,
+    .LatestNews-Container
+    .Main-Heading
+    .Desc_1,
+    .Instagram-Container
+    .Main-Heading
+    .Desc_1 {
+        font-size: 1.6rem;
+    }
+
+
+    .Address
+    .Desc_1,
+    .Address
+    .Desc_2 {
+        font-size: 1.2rem;
+    }
+
+    .ImgEmail {
+        height: 1rem;
+    }
+
+    .ImgSocialIconCommon {
+        height: 2.4rem;
+    }
+
+    .LatestNews
+    .Desc_1 {
+        font-size: 1rem;
+    }
+
+    .ImgCommonNews {
+        height: 4.4rem;
+    }
+
+    .ImgCmnInstStory {
+        height: 7.4rem;
+    }
+
+    .PrivacyPolicies {
+        font-size: 1rem;
+    }
+
+    .CopyRight {
+        font-size: 1.2rem;
+    }
+
+    .DesignedBy {
+        font-size: 1.2rem;
+    }
+
+    .ImgDesignedBy {
+        height: 1.6rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width:768px) {
+    .FooterBg {
+        /*transform: translate(-50%,30%);*/
+    }
+
+    .ImgIconCommon {
+        height: 1.6rem;
+    }
+
+    .About-Container
+    .Main-Heading
+    .Desc_1,
+    .LatestNews-Container
+    .Main-Heading
+    .Desc_1,
+    .Instagram-Container
+    .Main-Heading
+    .Desc_1 {
+        font-size: 1.6rem;
+    }
+
+    .Address
+    .Desc_1,
+    .Address
+    .Desc_2 {
+        font-size: 1.4rem;
+    }
+
+    .ImgEmail {
+        height: 1rem;
+    }
+
+    .ImgSocialIconCommon {
+        height: 2.4rem;
+    }
+
+    .LatestNews
+    .Desc_1 {
+        font-size: 1.4rem;
+    }
+
+    .ImgCommonNews {
+        height: 4.4rem;
+    }
+
+    .Insta-Stories {
+        gap: 1rem;
+    }
+
+    .ImgCmnInstStory {
+        height: 8.6rem;
+    }
+
+    .PrivacyPolicies {
+        font-size: 1.2rem;
+    }
+
+    .CopyRight {
+        font-size: 1.4rem;
+    }
+
+    .DesignedBy {
+        font-size: 1.2rem;
+    }
+
+    .ImgDesignedBy {
+        height: 1.6rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width:992px),(min-width:993px) {
+    .Footer {
+        margin-inline: 3.2rem;
+    }
+
+    .FooterBg {
+        /*transform: translate(-50%,30%);*/
+    }
+
+    .ImgIconCommon {
+        height: 2rem;
+    }
+
+    .About-Container
+    .Main-Heading
+    .Desc_1,
+    .LatestNews-Container
+    .Main-Heading
+    .Desc_1,
+    .Instagram-Container
+    .Main-Heading
+    .Desc_1 {
+        font-size: 1.8rem;
+    }
+
+    .Address
+    .Desc_1,
+    .Address
+    .Desc_2 {
+        font-size: 1.4rem;
+    }
+
+    .MobileNo, .EmailAddress {
+        font-size: 1.4rem;
+    }
+
+    .ImgEmail {
+        height: 1.4rem;
+    }
+
+    .ImgSocialIconCommon {
+        height: 2.4rem;
+    }
+
+    .LatestNews
+    .Desc_1 {
+        font-size: 1.4rem;
+    }
+
+    .ImgCommonNews {
+        height: auto;
+        width: 15rem;
+        border-radius: 1rem;
+    }
+
+    .Insta-Stories {
+        gap: 1rem;
+    }
+
+    .ImgCmnInstStory {
+        height: 10rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
+
+    .PrivacyPolicy-Container {
+        background: linear-gradient(90deg, rgb(255 255 255) 0%, rgb(229 229 229) 50%, rgb(255 255 255) 100%);
+    }
+
+    .PrivacyPolicies {
+        font-size: 1.2rem;
+    }
+
+    .CopyRight {
+        font-size: 1.4rem;
+    }
+
+    .DesignedBy {
+        font-size: 1.2rem;
+    }
+
+    .ImgDesignedBy {
+        height: 1.6rem;
+    }
+
+    .CopyRightsAndDesign_Bs {
+        position: relative;
+    }
+
+    .DesignedBy {
+        font-size: 1.2rem;
+        position: absolute;
+        right: 10%;
+        top: 0;
+    }
+}
+.divFooterLogo {
+    text-align:center;
+}
+.imgFooterLogo {
+    width: 10rem;
+}
+
+.mapstyle {
+    height: 300px;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
